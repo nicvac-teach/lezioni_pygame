@@ -56,20 +56,36 @@ ed il file output01.txt conterrà:
 Case #1: 10
 Case #2: 30
 ```
+In definitiva, per come abbiamo impostato il template, gli input saranno letti dal file **input01.txt** ed i risultati saranno scritti nel file **output.txt**.
 
-A questo punto siamo pronti per risolvere il problema. Quindi analizzare l'esercizio e scrivere il proprio programma sostituendo **solo queste righe** presenti nel template
+Per meglio comprendere il funzionamento del template, consiglio di lanciare il debugger (breakpoint sulla prima istruzione, click su fossili.py / opzioni tasto run ▶️ / debug) ed eseguire il template una istruzione per volta.
+
+A questo punto siamo pronti per risolvere il problema. Quello che resta da fare è analizzare l'esercizio e scrivere il proprio programma sostituendo **solo queste righe** presenti nel template
 ```python
 # aggiungi codice...
 risposta = 42
 ```
 - Eseguire il programma: click su fossili.py / tasto run ▶️ in alto a destra.
 
-In definitiva, per come abbiamo impostato il template, gli input saranno letti dal file **input01.txt** ed i risultati saranno scritti nel file **output.txt**.
 Solo quando il programma che scriveremo genererà un file **output.txt** identico al file **output01.txt**, con buone probabilità la nostra soluzione risulterà corretta e saremo quindi pronti per caricare la soluzione su training.olinfo.it!
+
+
+
+
 
 - Per salvare il lavoro, click su Source Control / Message + Commit & Push
 
 - Al termire, effettuare il Logout da Visual Studio Code / GitHub
+
+### Accedere ad altri esercizi
+- Login su [training.olinfo.it](https://training.olinfo.it)
+- Click su: Risolvi i problemi
+  - Nazionali, OIS: qui i problemi sono raggruppati per difficoltà
+  - Territoriali
+- Click su: Algobadge, apprendimento guidato
+- Wiki, Forum: soluzioni e supporto ad alcuni problemi in piattaforma
+
+<hr/>
 
 # Sezione Pygame
 
