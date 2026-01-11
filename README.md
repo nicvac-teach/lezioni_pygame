@@ -11,6 +11,7 @@ Prepariamo ad esempio l'ambiente per risolvere il problema "Fossili"
 ### Prepariamo l'ambiente
 - Creare la cartella "es01_fossili", che conterrà tutti i file relativi al problema.
 <img src="_docs/01_es_cart.png" width="30%">
+
 - Dalla pagina del problema "Antichi fossili", scaricare il template python "fossili.py" nella cartella "es01_fossili" appena creata
 - Aprire fossili.py
 - Attivare le righe relative a sys.stdin e sys.stdout (eliminare il commento '#')
@@ -35,6 +36,7 @@ sys.stdout = open('output.txt', 'w')
 ```
 - Creare nella cartella "es01_fossili" due file vuoti: input01.txt, output01.txt
 <img src="_docs/02_es_in_out.png" width="30%">
+
 - Copiare la sezione **Input** del problema nel file input01.txt
 - Copiare la sezione **Output** del problema nel file output01.txt
 - Quindi il file input01.txt conterrà:
@@ -55,7 +57,7 @@ Case #1: 10
 Case #2: 30
 ```
 
-A questo punto siamo pronti per risolvere il problema. Quindi comprendere l'esercizio, scrivere il proprio programma sostituendo **solo queste righe**
+A questo punto siamo pronti per risolvere il problema. Quindi analizzare l'esercizio e scrivere il proprio programma sostituendo **solo queste righe** presenti nel template
 ```python
 # aggiungi codice...
 risposta = 42
@@ -73,7 +75,10 @@ Solo quando il programma che scriveremo genererà un file **output.txt** identic
 
 ## Installazione librerie
 - Aprire il terminale
-- Eseguire: pip install pygame pymunk
+- Eseguire:
+```bash
+pip install pygame pymunk
+```
 
 ## Eseguire il test
 - Selezionare test/test_pymunk.py
