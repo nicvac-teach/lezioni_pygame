@@ -2,7 +2,7 @@
 
 ## Preparazione ambiente per il singolo problema
 Prepariamo ad esempio l'ambiente per risolvere il problema "Fossili"
-### Apriamo il problema
+### Apriamo la pagina del problema
 - Login su [training.olinfo.it](https://training.olinfo.it)
 - Click su: Risolvi i problemi / Territoriali
 - Cercare "fossili" / Click "Antichi fossili"
