@@ -1,0 +1,3 @@
+/Users/nicvac/Documents/Develop/PocOII26/templ_pygame_lezioni/es01_fossili/fossili.py
+Case #1: 42
+Case #2: 42

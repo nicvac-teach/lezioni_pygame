@@ -1,15 +1,81 @@
-# Creare Virtual Environment
-- Selezionare test/test_pygame.py
-- Click in basso a destra su versione python (es. 3.9.6)
-- Create Virtual Environment / Venv / Scegliere una versione di Python
+# Sezione Olimpiadi di Informatica
 
-# Installazione librerie
+## Preparazione ambiente per il singolo problema
+Prepariamo ad esempio l'ambiente per risolvere il problema "Fossili"
+### Apriamo il problema
+- Login su [training.olinfo.it](https://training.olinfo.it)
+- Click su: Risolvi i problemi / Territoriali
+- Cercare "fossili" / Click "Antichi fossili"
+
+**Prima ancora di leggere e comprendere il problema**, prepariamo l'ambiente di sviluppo.
+### Prepariamo l'ambiente
+- Creare la cartella "es01_fossili", che conterrà tutti i file relativi al problema.
+<img src="_docs/01_es_cart.png" width="30%">
+- Dalla pagina del problema "Antichi fossili", scaricare il template python "fossili.py" nella cartella "es01_fossili" appena creata
+- Aprire fossili.py
+- Attivare le righe relative a sys.stdin e sys.stdout (eliminare il commento '#')
+- Modificare "input.txt" --> "input01.txt"
+- Aggiungere le seguenti righe di codice necessarie a leggere correttamente gli input dalla cartella "es01_fossili":
+```python
+import os
+from pathlib import Path
+os.chdir(Path(__file__).parent)
+```
+Il template modificato dovrebbe apparire quindi:
+```python
+import sys
+import os
+from pathlib import Path
+os.chdir(Path(__file__).parent)
+# se preferisci leggere e scrivere da file
+# ti basta decommentare le seguenti due righe:
+sys.stdin = open('input01.txt')
+sys.stdout = open('output.txt', 'w')
+...
+```
+- Creare nella cartella "es01_fossili" due file vuoti: input01.txt, output01.txt
+<img src="_docs/02_es_in_out.png" width="30%">
+- Copiare la sezione **Input** del problema nel file input01.txt
+- Copiare la sezione **Output** del problema nel file output01.txt
+- Quindi il file input01.txt conterrà:
+```text
+2
+
+15 43
+20 500
+7 30
+
+70 100
+70 100
+70 100
+```
+ed il file output01.txt conterrà:
+```text
+Case #1: 10
+Case #2: 30
+```
+
+A questo punto siamo pronti per risolvere il problema. Quindi comprendere l'esercizio, scrivere il proprio programma sostituendo **solo queste righe**
+```python
+# aggiungi codice...
+risposta = 42
+```
+- Eseguire il programma: click su fossili.py / tasto run ▶️ in alto a destra.
+
+In definitiva, per come abbiamo impostato il template, gli input saranno letti dal file **input01.txt** ed i risultati saranno scritti nel file **output.txt**.
+Solo quando il programma che scriveremo genererà un file **output.txt** identico al file **output01.txt**, con buone probabilità la nostra soluzione risulterà corretta e saremo quindi pronti per caricare la soluzione su training.olinfo.it!
+
+- Per salvare il lavoro, click su Source Control / Message + Commit & Push
+
+- Al termire, effettuare il Logout da Visual Studio Code / GitHub
+
+# Sezione Pygame
+
+## Installazione librerie
 - Aprire il terminale
-- controllare che nel prompt sia indicato (.venv)
 - Eseguire: pip install pygame pymunk
 
-# Eseguire il test
-- Selezionare test/test_pygame.py
-- Tasto run ▶️ in alto a destra
-
-
+## Eseguire il test
+- Selezionare test/test_pymunk.py
+- Premere il tasto run ▶️ in alto a destra
+- Dei Click nella finestra generano delle sfere soggette alla forza di gravità
